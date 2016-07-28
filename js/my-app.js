@@ -14,5 +14,7 @@ var mainView = myApp.addView('.view-main', {
 function jumpPage(a) {
     if(a == 'itemlist') {
         mainView.router.loadPage("src/html/itemlist.html");
+    }else if(a == 'weixintest') {
+        mainView.router.loadPage("src/html/weixintest.html");
     }
 }

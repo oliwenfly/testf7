@@ -37,11 +37,11 @@
                                 <!--测试一-->
                                 <ul>
                                     <li>
-                                        <a href="src/html/itemlist.html" class="item-link">
+                                        <a href="#" class="item-link" onclick="jumpPage('itemlist')">
                                             <div class="item-content">
                                                 <div class="item-media"><i class="icon icon-f7"></i></div>
                                                 <div class="item-inner">
-                                                    <div class="item-title">测试一</div>
+                                                    <div class="item-title">跳转测试</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -49,11 +49,11 @@
 
                                     <!--测试二-->
                                     <li>
-                                        <a href="src/html/itemlist.html" class="item-link">
+                                        <a onclick="jumpPage('weixintest')" class="item-link">
                                             <div class="item-content">
                                                 <div class="item-media"><i class="icon icon-f7"></i></div>
                                                 <div class="item-inner">
-                                                    <div class="item-title">测试二</div>
+                                                    <div class="item-title">微信测试</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -77,9 +77,13 @@
             </div>
         </div>
 
+        <!--weixin-->
+        <script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
         <!--js-->
         <script type="text/javascript" src="js/framework7.min.js"></script>
         <!-- Path to your app js-->
         <script type="text/javascript" src="js/my-app.js"></script>
+        <script type="text/javascript" src="src/js/itemlist.js"></script>
+        <script type="text/javascript" src="src/js/weixintest.js"></script>
     </body>
 </html>
