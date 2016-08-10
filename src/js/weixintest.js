@@ -13,14 +13,14 @@ WeixinSdk.init = function() {
  * 微信配置成功调用
  */
 wx.ready(function() {
-    myApp.alert("微信配置成功!");
+    //myApp.alert("微信配置成功!");
 });
 
 /**
  * 微信配置失败调用
  */
 wx.error(function(res){
-    myApp.alert('微信配置失败!');
+    //myApp.alert('微信配置失败!');
 });
 
 /**

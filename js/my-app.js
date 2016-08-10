@@ -10,7 +10,7 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true,
 });
 
-//启动
+//page跳转
 function jumpPage(a) {
     if(a == 'itemlist') {
         mainView.router.loadPage("src/html/itemlist.html");
@@ -18,3 +18,13 @@ function jumpPage(a) {
         mainView.router.loadPage("src/html/weixintest.html");
     }
 }
+
+//页面初始化
+$$(document).on('pageInit', function (e) {
+    // Page Data contains all required information about loaded and initialized page
+    var page = e.detail.page;
+    //
+    if(page.name = 'itemlist') {
+        ItemList.init();
+    }
+})
