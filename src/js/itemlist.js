@@ -7,7 +7,14 @@ var ItemList = function() {};
 ItemList.init = function() {
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
-        paginationClickable: true
+        effect: 'cube',
+        grabCursor: true,
+        cube: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 1,
+            shadowScale: 0
+        }
     });
 }
 
